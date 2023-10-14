@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-
+require('dotenv').config();
 //creating a database
-mongoose.connect("mongodb+srv://satyam:12345678S@cluster0.5nf7ss4.mongodb.net/Printing_Press", {
+mongoose.connect(process.env.DBROOT , {
     // useCreateIndex:true,
     useNewUrlParser:true,
     useUnifiedTopology:true 
@@ -10,3 +10,4 @@ mongoose.connect("mongodb+srv://satyam:12345678S@cluster0.5nf7ss4.mongodb.net/Pr
 }).catch((error) => {
     console.log(error);
 })
+ 

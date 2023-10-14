@@ -1,12 +1,13 @@
 const express = require("express");
 const path = require("path"); 
 require("./db/conn");
+require('dotenv').config();
 const hbs = require("hbs");
 const Contact = require("./db/contactSchema");
 const bodyParser =require('body-parser');
 const { data } = require("jquery");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 
 // to parse the req.body
