@@ -1,0 +1,29 @@
+{{>css}}
+    <section id="cart" class="section-p1">
+        <table width="100%"> 
+            <thead>
+                <tr> 
+                    <td>S.N</td>
+                    <td> Name </td> 
+                    <td> E-mail </td> 
+                    <td> Subject </td> 
+                    <td> Description </td> 
+                   
+                </tr>
+            </thead>
+            <tbody>
+              {{#each data}}
+                <tr>
+                   
+                   <td>  </td>
+                   <td> {{this.name}} </td>
+                   <td> {{this.email}}</td>
+                   <td> {{this.subject}} </td>
+                   <td> {{this.discription}} </td>
+                   
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+
+    </section>
