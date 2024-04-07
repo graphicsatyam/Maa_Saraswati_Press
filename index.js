@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT;
 
 
-app.use("/",express.static('public'));
+app.use('/public', express.static("public"));
 
 // to parse the req.body
 app.use(bodyParser.urlencoded({ extended: true }))
