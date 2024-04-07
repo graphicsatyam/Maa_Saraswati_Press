@@ -15,9 +15,9 @@ const port = process.env.PORT;
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 //setting the path 
-const staticpath = path.join(__dirname, "./public");
-const templatepath = path.join(__dirname, "./templates/views");
-const partialpath = path.join(__dirname, "./templates/partials");
+const staticpath = path.join(__dirname, "public");
+const templatepath = path.join(__dirname, "templates/views");
+const partialpath = path.join(__dirname, "templates/partials");
 
 // console.log(path.join(__dirname, "../public"));
  
